@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Londrina Solid', cursive;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: #440A67;
+    height: 70px;
+    color : white;
+}
+
+header h1 {
+    float: left;
+    padding: 15px 0;
+}
+
+header ul{
+    float: right;  
+}
+
+header ul li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 25px;
+}
+
+header a img {
+    height: 30px;
+    float: right;
+    padding: 20px;
+}
+
+header ul li a:hover {
+    background-color:#440A67;
+    opacity: 80%;
+}
+
+#home {
+    height: 90vh;
+    background-image: url('./asset/bgweb.jpg');
+    background-size: cover;
+    position: relative;
+    margin: auto;
+}
+
+#home h1 {
+    color: white;
+    font-size: 150px;
+    top: 30%;
+    left: 40%;
+    position: absolute;
+}
+
+#home h3 {
+    font-family: 'Londrina Shadow', cursive;;
+    color: white;
+    top: 50%;
+    left:38%;
+    font-size: 60px;
+    position: absolute;
+    padding: 5px;
+}
+
+#product {
+    height: 115vh;
+}
+
+#product .container h3 {
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+    font-size: 50px;    
+}
+
+#product .container u {
+    color: black;
+    padding: 5px;
+    
+}
+
+#product .box .col-6 {
+    width: 40%;
+    box-sizing: border-box;
+    /* text-align: right; */
+    padding: 0 30px;
+    float: right;
+}
+
+#product .box h5 {
+    font-size: 30px;
+    padding-top: 5px;
+    padding-left: 50px;
+}
+
+#product .box p {
+    font-family: 'Bubblegum Sans', cursive;
+    padding-left: 90px;
+    padding-bottom: 50px;
+}
+
+#product .box img {
+    width: 50%;
+    transition:all 0.5s ease-out; 
+	position: relative;
+}
+
+#product .box img:hover {
+    transform:scale(1.1);
+}
+
+footer {
+    height: 115px;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 5px;
+    width: 20px;
+}
+
