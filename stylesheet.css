@@ -6,7 +6,6 @@
     padding: 0;
     margin: 0;
     font-family: 'Londrina Solid', cursive;
-
 }
 
 a {
@@ -22,6 +21,21 @@ header, footer {
     background-color: #440A67;
     height: 70px;
     color : white;
+    letter-spacing: 2px;
+}
+
+header  {
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 1;
+    transition: 0.6s;
+}
+
+header.sticky {
+    background-color: #FFE3FE;
 }
 
 header h1 {
@@ -37,31 +51,38 @@ header ul li {
     display: inline-block;
     font-size: 20px;
     padding: 25px;
+    transition: 0.6s;
 }
 
-header a img {
-    height: 30px;
+header a i {
+    /* height: 30px; */
     float: right;
     padding: 20px;
 }
 
-header ul li a:hover {
+/* header ul li a:hover {
     background-color:#440A67;
     opacity: 80%;
+} */
+
+header.sticky ul li a, header.sticky h1, header.sticky a {
+    color: black;
 }
 
 #home {
-    height: 90vh;
+    height: 100vh;
     background-image: url('./asset/bgweb.jpg');
     background-size: cover;
     position: relative;
-    margin: auto;
+    top: 70px;
+    background-repeat: no-repeat;
+    display: flex;
 }
 
 #home h1 {
     color: white;
     font-size: 150px;
-    top: 30%;
+    top: 25%;
     left: 40%;
     position: absolute;
 }
@@ -69,7 +90,7 @@ header ul li a:hover {
 #home h3 {
     font-family: 'Londrina Shadow', cursive;;
     color: white;
-    top: 50%;
+    top: 45%;
     left:38%;
     font-size: 60px;
     position: absolute;
@@ -77,21 +98,23 @@ header ul li a:hover {
 }
 
 #product {
-    height: 115vh;
+    min-height: 120vh;
+    position: relative;
+    justify-content: space-around;
+    width: 100%;
 }
 
-#product .container h3 {
+#product h3, #faq h3 {
+    margin-top: 55px;
     padding: 20px;
-    margin-bottom: 20px;
     text-align: center;
     color: black;
     font-size: 50px;    
 }
 
-#product .container u {
+#product .container u, #contact u {
     color: black;
-    padding: 5px;
-    
+    padding: 5px;   
 }
 
 #product .box .col-6 {
@@ -100,6 +123,7 @@ header ul li a:hover {
     /* text-align: right; */
     padding: 0 30px;
     float: right;
+    position: relative;
 }
 
 #product .box h5 {
@@ -124,8 +148,107 @@ header ul li a:hover {
     transform:scale(1.1);
 }
 
+#faq {
+    background-color: #440A67;
+    min-height: 80vh;
+    position: relative;
+    justify-content: space-around;
+    padding-top: 0.5px
+}
+
+#faq h3,  u {
+    color: white;
+}
+
+#faq div.part {
+    margin: 20px;
+    margin-left: 100px;
+}
+
+#faq p.q {
+    display:inline-flex;
+    background-color: #93329E;
+    padding: 5px;
+    font-size: 22px;
+    color: white;
+    border-radius: 7px;
+}
+
+#faq p.a {
+    display:inline-flex;
+    background-color: #FFE3FE;
+    padding: 5px;
+    font-size: 22px;
+    border-radius: 7px;
+}
+
+#contact input, textarea {
+    font-size: 18px;
+    width: 350px;
+    background-color: #FFE3FE;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#contact {
+    min-height: 80vh;
+    position: relative;
+    justify-content: space-around;
+}
+
+#contact h3 {
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 50px; 
+}
+
+#contact form p {
+    margin: 10px;
+    padding-left: 100px; 
+} 
+
+#contact form {
+    float: left;
+}
+
+#contact input[type="submit"] {
+    margin-left: 115px;
+    margin-bottom: 30px;
+}
+
+#contact ul{
+    float: right;
+    list-style: none;
+    padding-top: 20px;
+}
+
+#contact ul li a i {
+    padding-top: 20px;
+    padding-left: 40px;
+    color: white;
+}
+
+#contact ul li p {
+    margin-top: 30px;
+    margin-bottom: 45px;
+    margin-right: 20vh;
+    font-size: 20px;
+    color: white;
+    padding-left: 5px;
+}
+
+#contact .container .number {
+    background-color: #93329E;
+    margin-right: 50px;
+    float: right;
+    border-radius: 30px;
+    border: 5px solid #FFE3FE;
+}
+
 footer {
-    height: 115px;
+    height: 15vh;
     text-align: center;
 }
 
@@ -135,3 +258,6 @@ footer ul li {
     width: 20px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
