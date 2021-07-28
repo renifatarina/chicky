@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,12 +14,12 @@
     <header>
         <div class="container">
             <h1>CHIKY</h1>
-            <a href="#"><img src="./asset/keranjang.png"></a>
+            <a href=""><i class="fas fa-shopping-basket fa-2x" ></i></a>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#product">Product</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -55,6 +55,82 @@
         </div>
     </section>
 
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container">
+            <u><h3>FAQ</h3></u>
+            <div class="part">
+                <p class="q">Apakah barangnya selalu ready?</p>
+                <p class="a">Barang tersedia secara Pre-Order selama 3 hari maksimal pengerjaan karena barang dibuat langsung ketika ada pemesanan.</p>
+            </div>
+            <div class="part">
+                <p class="q">Apakah bisa custom warna?</p>
+                <br>
+                <p class="a">Ya bisa, tetapi tergantung dengan persediaan yaa.</p>
+            </div>
+            <div class="part">
+                <p class="q">Apakah bisa custom ukuran?</p>
+                <p class="a">Barang tersedia secara Pre-Order selama 3 hari maksimal pengerjaan karena barang dibuat langsung ketika ada pemesanan.</p>
+            </div>
+            <div class="part">
+                <p class="q">Ini yang dijual hanya bentuk ayam saja ya?</p>
+                <br>
+                <p class="a">Iya benar, sesuai namanya "Chiky". Jadi kami hanya menjual bentuk ayam saja saat ini.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="container">
+            <u><h3>CONTACT</h3></u>
+                <div class="table">
+                    <form action="">
+                            <p><input type="text" name="name" placeholder=" Nama Anda "></p>
+                            <p><input type="text" name="address" placeholder=" Alamat Email "></p>
+                            <p><input type="text" name="phone" placeholder=" No Telepon "></p>
+                            <p><textarea name="message" id="" cols="40" rows="10" placeholder=" Tulis Pesan "></textarea></p>
+                            <br>
+	                        <input type="submit" value="Kirim">
+                    </form>
+                </div>
+                <div class="number">
+                    <ul>
+                        <li>
+                            <p>082220551857</p>
+                            <p>@chikylove</p>
+                            <p>@chikylove</p>
+                            <p>Chikylove</p>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="" target="_blank">
+                                <i class="fab fa-whatsapp fa-3x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank">
+                                <i class="fab fa-instagram fa-3x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank">
+                                <i class="fab fa-twitter fa-3x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank">
+                                <i class="fab fa-youtube fa-3x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                    
+        </div>
+    </section>
+
     <!-- footer -->
     <footer>
         <div class="container">
@@ -68,7 +144,12 @@
             <small>Copyright &copy; 2021 - Reni. All Rights Reserved.</small>
         </div>
     </footer>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
 </body>
 </html>
-
-<!--    <i class="fab fa-whatsapp"></i -->
