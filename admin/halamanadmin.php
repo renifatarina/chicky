@@ -8,7 +8,7 @@
 </head>
 <body align="center">
 
-<h2>Data Kontak Pesan</h2>
+<h2>Data Kontak Pesan Chiky</h2>
 <table width="720" border="1" cellpadding="5" cellspacing="0" align="center">
     <tr>
         <th width="30"> No. </th>
