@@ -85,11 +85,11 @@
         <div class="container">
             <u><h3>CONTACT</h3></u>
                 <div class="table">
-                    <form action="">
-                            <p><input type="text" name="name" placeholder=" Nama Anda "></p>
-                            <p><input type="text" name="address" placeholder=" Alamat Email "></p>
-                            <p><input type="text" name="phone" placeholder=" No Telepon "></p>
-                            <p><textarea name="message" id="" cols="40" rows="10" placeholder=" Tulis Pesan "></textarea></p>
+                    <form method="POST" action="./admin/chiky_message.php">
+                            <p><input type="text" name="nama" placeholder=" Nama Anda "></p>
+                            <p><input type="text" name="email" placeholder=" Alamat Email "></p>
+                            <p><input type="text" name="no_hp" placeholder=" No Telepon "></p>
+                            <p><textarea name="pesan" id="" cols="40" rows="10" placeholder=" Tulis Pesan "></textarea></p>
                             <br>
 	                        <input type="submit" value="Kirim">
                     </form>
